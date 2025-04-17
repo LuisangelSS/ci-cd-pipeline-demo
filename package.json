@@ -1,0 +1,23 @@
+{
+    "name": "ci-cd-pipeline-demo",
+    "version": "1.0.0",
+    "description": "Demo de un pipeline CI/CD con GitHub Actions",
+    "main": "src/app.js",
+    "scripts": {
+      "test": "jest --coverage",
+      "start": "serve src"
+    },
+    "keywords": [
+      "ci",
+      "cd",
+      "github-actions",
+      "pipeline"
+    ],
+    "author": "Tu Nombre",
+    "license": "MIT",
+    "devDependencies": {
+      "jest": "^29.7.0",
+      "jest-environment-jsdom": "^29.7.0",
+      "serve": "^14.2.1"
+    }
+  }

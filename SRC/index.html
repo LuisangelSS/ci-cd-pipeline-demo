@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Geométrica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Geométrica</h1>
+        
+        <div class="form-group">
+            <label for="shape">Selecciona una figura:</label>
+            <select id="shape">
+                <option value="square">Cuadrado</option>
+                <option value="rectangle">Rectángulo</option>
+                <option value="circle">Círculo</option>
+                <option value="triangle">Triángulo</option>
+            </select>
+        </div>
+        
+        <div id="square-inputs" class="shape-inputs">
+            <div class="form-group">
+                <label for="square-side">Lado:</label>
+                <input type="number" id="square-side" min="0">
+            </div>
+        </div>
+        
+        <div id="rectangle-inputs" class="shape-inputs" style="display: none;">
+            <div class="form-group">
+                <label for="rectangle-width">Ancho:</label>
+                <input type="number" id="rectangle-width" min="0">
+            </div>
+            <div class="form-group">
+                <label for="rectangle-height">Altura:</label>
+                <input type="number" id="rectangle-height" min="0">
+            </div>
+        </div>
+        
+        <div id="circle-inputs" class="shape-inputs" style="display: none;">
+            <div class="form-group">
+                <label for="circle-radius">Radio:</label>
+                <input type="number" id="circle-radius" min="0">
+            </div>
+        </div>
+        
+        <div id="triangle-inputs" class="shape-inputs" style="display: none;">
+            <div class="form-group">
+                <label for="triangle-base">Base:</label>
+                <input type="number" id="triangle-base" min="0">
+            </div>
+            <div class="form-group">
+                <label for="triangle-height">Altura:</label>
+                <input type="number" id="triangle-height" min="0">
+            </div>
+        </div>
+        
+        <button id="calculate-btn">Calcular Área</button>
+        
+        <div id="result" class="result-container">
+            El área es: <span id="area-value">0</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
